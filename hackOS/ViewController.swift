@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-   @IBOutlet weak var lengua: UIMenu!
+    @IBOutlet weak var Interpretar: UIButton!
+    
+    @IBOutlet weak var Opciones: UIButton!
+    
+    @IBOutlet weak var lengua: UIMenu!
     
     @IBOutlet weak var texto: UITextField!
     
