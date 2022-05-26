@@ -207,6 +207,7 @@
                                         <constraint firstItem="xzz-Bs-GQq" firstAttribute="top" secondItem="WGO-rQ-VNc" secondAttribute="topMargin" id="yd8-5f-Amy"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="cell"/>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
