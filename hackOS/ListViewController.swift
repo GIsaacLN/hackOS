@@ -39,7 +39,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath)
     -> CGFloat{
-        return 196.0
+        return 110.0
     }
     
     @IBAction func addRow(_ sender: UIButton){
@@ -49,7 +49,12 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @objc func deleteRow(_ sender: UIButton){
-        
+        let point  = sender.convert(CGPoint.zero, to: tblList)
+        guard let indexPath = tblList.indexPathForRow(at: point) else{
+            return
+        }
+        names.remove(at: indexPath.row)
+        tblList.deleteRows(at: [indexPath], with: .left)
     }
 
     /*
