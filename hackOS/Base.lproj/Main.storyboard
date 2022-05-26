@@ -79,7 +79,7 @@
                                 <rect key="frame" x="79" y="348" width="255" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQb-Mv-Flu">
                                 <rect key="frame" x="179" y="635" width="54" height="27"/>
@@ -161,23 +161,42 @@
             </objects>
             <point key="canvasLocation" x="2442.0289855072465" y="81.696428571428569"/>
         </scene>
-        <!--Item 2-->
+        <!--Interprete-->
         <scene sceneID="lQm-rC-m9I">
             <objects>
                 <viewController id="F9r-Mm-dOO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="77H-rr-aTM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Texto a interpretar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-pG-NqO">
+                                <rect key="frame" x="128" y="243" width="159" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AET-u6-zgT">
+                                <rect key="frame" x="184" y="141" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="J0D-DX-AN6">
+                                    <children>
+                                        <command title="LSM" id="Ca0-Z4-7sI"/>
+                                        <command title="ASL" id="EAr-UD-5gw"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DEJ-v6-O8y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Cfv-n9-AOC"/>
+                    <tabBarItem key="tabBarItem" title="Interprete" id="Cfv-n9-AOC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wF-cb-Rda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="1772"/>
+            <point key="canvasLocation" x="-55.072463768115945" y="1796.6517857142856"/>
         </scene>
-        <!--Item 1-->
+        <!--Favoritos-->
         <scene sceneID="L77-6C-SCq">
             <objects>
                 <viewController id="FiF-kE-ZS4" sceneMemberID="viewController">
@@ -187,7 +206,7 @@
                         <viewLayoutGuide key="safeArea" id="SsB-D6-Vez"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="bYi-IQ-ndA"/>
+                    <tabBarItem key="tabBarItem" title="Favoritos" id="bYi-IQ-ndA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lId-xD-1OK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="67" y="980"/>
         </scene>
-        <!--Item-->
+        <!--Vocabulario-->
         <scene sceneID="7FD-Tw-xPh">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="re8-QI-dd5" customClass="ListViewController" customModule="hackOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -266,7 +285,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="grL-ml-Bdj"/>
+                    <tabBarItem key="tabBarItem" title="Vocabulario" id="grL-ml-Bdj"/>
                     <navigationItem key="navigationItem" id="fZ8-OS-OA7">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="is0-tz-70f">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="X9T-a7-CeO">
