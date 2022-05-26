@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDataSource {
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tblList: UITableView!
 
@@ -17,6 +17,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tblList.tableFooterView = UIView.init(frame: .zero)
         tblList.dataSource = self
+        tblList.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -35,6 +36,8 @@ class ListViewController: UIViewController, UITableViewDataSource {
         }
         return cell!
     }
+    
+    // juan
     
     @IBAction func addRow(_ sender: UIButton){
         

@@ -217,6 +217,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ADD"/>
+                                <connections>
+                                    <action selector="addRow:" destination="re8-QI-dd5" eventType="touchUpInside" id="a16-7i-KrY"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
