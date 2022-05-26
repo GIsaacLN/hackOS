@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hackOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6I-Nb-eOM">
@@ -100,7 +100,7 @@
                                     <color key="baseBackgroundColor" red="0.93668347600000001" green="0.90637046099999996" blue="0.87058240180000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="zfT-4T-q6f" kind="show" id="XRt-50-gby"/>
+                                    <segue destination="zfT-4T-q6f" kind="showDetail" id="XRt-50-gby"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQb-Mv-Flu">
@@ -121,6 +121,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="re8-QI-dd5" kind="show" id="GgN-Bq-BEc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incio de sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-2n-T8l">
                                 <rect key="frame" x="102" y="168" width="210" height="40"/>
@@ -148,7 +151,7 @@
             <objects>
                 <viewController id="zfT-4T-q6f" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GNo-Sn-uUG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDn-GP-YhE">
@@ -257,7 +260,10 @@
                                     <color key="baseBackgroundColor" red="0.93668347600000001" green="0.90637046099999996" blue="0.87058240180000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="AqQ-al-65Z"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="AqQ-al-65Z">
+                                        <segue key="commit" inheritsFrom="parent" id="mti-xM-UEA"/>
+                                        <segue key="preview" inheritsFrom="commit" id="6a4-bw-Adx"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -360,7 +366,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t2I-XH-Qhq"/>
+        <segue reference="XRt-50-gby"/>
+        <segue reference="bp4-1n-SEU"/>
+        <segue reference="AqQ-al-65Z"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
