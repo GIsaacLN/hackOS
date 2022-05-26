@@ -215,6 +215,45 @@
                                     <color key="baseForegroundColor" red="0.19246730209999999" green="0.43901610369999999" blue="0.44706344599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfc-K4-TNc">
+                                <rect key="frame" x="154" y="598" width="106" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.93668347600000001" green="0.90637046099999996" blue="0.87058240180000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Registrarse">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.19246730209999999" green="0.43901610369999999" blue="0.44706344599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hY-o8-Fw4">
+                                <rect key="frame" x="144" y="598" width="119" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.93668347600000001" green="0.90637046099999996" blue="0.87058240180000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Registrarse">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19246730209999999" green="0.43901610369999999" blue="0.44706344599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.19246730209999999" green="0.43901610369999999" blue="0.44706344599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="AqQ-al-65Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9uV-Mx-sjL"/>
                         <color key="backgroundColor" red="0.70313841099999996" green="0.84735703470000001" blue="0.8196068406" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -223,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAF-uj-uTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442.0289855072465" y="81.696428571428569"/>
+            <point key="canvasLocation" x="2547.826086956522" y="117.85714285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7FD-Tw-xPh">
@@ -377,6 +416,9 @@
             <point key="canvasLocation" x="89.855072463768124" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="t2I-XH-Qhq"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="AdobeColor-Microsoft _ 1MSQFT" width="1600" height="2400"/>
         <systemColor name="systemBackgroundColor">
