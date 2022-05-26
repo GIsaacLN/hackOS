@@ -27,7 +27,21 @@ class ListViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        if let lbl = cell?.contentView.viewWithTag(101) as? UILabel {
+            lbl.text = names[indexPath.row]
+        }
+        if let btnDelete = cell?.contentView.viewWithTag(102) as? UIButton {
+            btnDelete.addTarget(self, action: #selector(deleteRow(  :)), for: .touchUpInside)
+        }
         return cell!
+    }
+    
+    @IBAction func addRow( sender: UIButton){
+        
+    }
+    
+    @objc func deleteRow( sender: UIButton){
+        
     }
 
     /*
