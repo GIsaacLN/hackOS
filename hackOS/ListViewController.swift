@@ -37,9 +37,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell!
     }
     
-    // juan
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath)
+    -> CGFloat{
+        return 196.0
+    }
     
     @IBAction func addRow(_ sender: UIButton){
+        names.insert("New Phrase", at: 0)
+        tblList.insertRows(at: [IndexPath(row: 0, section: 0)], with: .top)
         
     }
     
